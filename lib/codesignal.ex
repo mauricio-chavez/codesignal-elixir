@@ -51,6 +51,29 @@ defmodule CodeSignal do
     input_array
     |> Enum.zip(tail)
     |> Enum.map(fn {first, second} -> first * second end)
-    |> Enum.max
+    |> Enum.max()
+  end
+
+  @doc """
+  Find the areas of a polygon for a given n.
+  See this [link](https://app.codesignal.com/arcade/intro/level-2/yuGuHvcCaFCKk56rJ)
+
+  ## Examples
+
+      iex> CodeSignal.shape_area 1
+      1
+
+      iex> CodeSignal.shape_area 2
+      5
+
+      iex> CodeSignal.shape_area 3
+      13
+
+  """
+  def shape_area(n) do
+    case n do
+      1 -> 1
+      n -> n * n + (n - 1) * (n - 1)
+    end
   end
 end
