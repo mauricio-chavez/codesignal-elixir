@@ -38,43 +38,19 @@ defmodule CodeSignal do
   end
 
   @doc """
-  Given the string, check if it is a palindrome.
+  Given an array of integers, find the pair of adjacent elements that has the
+  largest product and return that product.
 
   ## Examples
 
-      iex> CodeSignal.check_palindrome?("aabaa")
-      true
-
-      iex> CodeSignal.check_palindrome?("abac")
-      false
+      iex> CodeSignal.adjacent_elements_product [3, 6, -2, -5, 7, 3]
+      21
 
   """
-  def check_palindrome?(input_string) do
-    String.reverse(input_string) == input_string
-  end
-
-  @doc """
-  Given the string, check if it is a palindrome (with recursion).
-
-  ## Examples
-
-      iex> CodeSignal.check_palindrome_recursive?("aabaa")
-      true
-
-      iex> CodeSignal.check_palindrome_recursive?("abac")
-      false
-
-  """
-  def check_palindrome_recursive?(input_string) do
-    list = String.to_charlist(input_string)
-
-    cond do
-      String.length(input_string) == 0 ->
-        true
-
-      true ->
-        Enum.at(list, 0) == Enum.at(list, -1) &&
-          check_palindrome_recursive?(List.to_string(Enum.drop(Enum.drop(list, -1), 1)))
-    end
+  def adjacent_elements_product([_head | tail] = input_array) do
+    input_array
+    |> Enum.zip(tail)
+    |> Enum.map(fn {first, second} -> first * second end)
+    |> Enum.max
   end
 end
