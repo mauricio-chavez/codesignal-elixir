@@ -1,6 +1,6 @@
-defmodule CodeSignal.EdgeOfTheOcean do
+defmodule Arcade.EdgeOfTheOcean do
   @moduledoc """
-  Edge of the Ocean chapter's solutions with Elixir.
+  Arcade - Edge of the Ocean chapter's solutions with Elixir.
   """
 
   @doc """
@@ -9,7 +9,7 @@ defmodule CodeSignal.EdgeOfTheOcean do
 
   ## Examples
 
-      iex> CodeSignal.EdgeOfTheOcean.adjacent_elements_product [3, 6, -2, -5, 7, 3]
+      iex> Arcade.EdgeOfTheOcean.adjacent_elements_product [3, 6, -2, -5, 7, 3]
       21
 
   """
@@ -26,13 +26,13 @@ defmodule CodeSignal.EdgeOfTheOcean do
 
   ## Examples
 
-      iex> CodeSignal.EdgeOfTheOcean.shape_area 1
+      iex> Arcade.EdgeOfTheOcean.shape_area 1
       1
 
-      iex> CodeSignal.EdgeOfTheOcean.shape_area 2
+      iex> Arcade.EdgeOfTheOcean.shape_area 2
       5
 
-      iex> CodeSignal.EdgeOfTheOcean.shape_area 3
+      iex> Arcade.EdgeOfTheOcean.shape_area 3
       13
 
   """
@@ -53,7 +53,7 @@ defmodule CodeSignal.EdgeOfTheOcean do
 
   ## Examples
 
-      iex> CodeSignal.EdgeOfTheOcean.make_array_consecutive_2 [6, 2, 3, 8]
+      iex> Arcade.EdgeOfTheOcean.make_array_consecutive_2 [6, 2, 3, 8]
       3
 
   """

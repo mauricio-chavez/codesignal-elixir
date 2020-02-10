@@ -1,14 +1,14 @@
-defmodule CodeSignal.TheJourneyBegins do
+defmodule Arcade.TheJourneyBegins do
   @moduledoc """
-  The Journey Begins chapter's solutions with Elixir.
+  Arcade - The Journey Begins chapter's solutions with Elixir.
   """
 
   @doc """
-  returns the sum of two numbers.
+  Returns the sum of two numbers.
 
   ## Examples
 
-      iex> CodeSignal.TheJourneyBegins.add(2, 3)
+      iex> Arcade.TheJourneyBegins.add(2, 3)
       5
 
   """
@@ -23,13 +23,13 @@ defmodule CodeSignal.TheJourneyBegins do
 
   ## Examples
 
-      iex> CodeSignal.TheJourneyBegins.century_from_year(1)
+      iex> Arcade.TheJourneyBegins.century_from_year(1)
       1
 
-      iex> CodeSignal.TheJourneyBegins.century_from_year(101)
+      iex> Arcade.TheJourneyBegins.century_from_year(101)
       2
 
-      iex> CodeSignal.TheJourneyBegins.century_from_year(200)
+      iex> Arcade.TheJourneyBegins.century_from_year(200)
       2
 
   """
@@ -42,13 +42,13 @@ defmodule CodeSignal.TheJourneyBegins do
 
   ## Examples
 
-      iex> CodeSignal.TheJourneyBegins.check_palindrome? "aabaa"
+      iex> Arcade.TheJourneyBegins.check_palindrome? "aabaa"
       true
 
-      iex> CodeSignal.TheJourneyBegins.check_palindrome? "abac"
+      iex> Arcade.TheJourneyBegins.check_palindrome? "abac"
       false
 
-      iex> CodeSignal.TheJourneyBegins.check_palindrome? "a"
+      iex> Arcade.TheJourneyBegins.check_palindrome? "a"
       true
 
   """

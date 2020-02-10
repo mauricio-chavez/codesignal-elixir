@@ -1,10 +1,11 @@
 defmodule CodeSignalTest do
   use ExUnit.Case
   doctest CodeSignal
-  doctest CodeSignal.EdgeOfTheOcean
-  doctest CodeSignal.TheJourneyBegins
+  doctest Arcade.EdgeOfTheOcean
+  doctest Arcade.TheJourneyBegins
+  doctest InterviewPractice.Arrays
 
   test "Add is working" do
-    assert CodeSignal.TheJourneyBegins.add(7, 5) == 12
+    assert Arcade.TheJourneyBegins.add(7, 5) == 12
   end
 end
